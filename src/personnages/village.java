@@ -1,14 +1,19 @@
-package Personnages;
+package personnages;
+
+import personnages.Chef;
+import personnages.Romain;
 
 public class Village{
     private String nom;
     private Chef chef;
     private int nbVillageois = 0;
-    private String[nbVillageois] villageois;
+    private String[] villageois;
     
-    public Village(String nom, int nbVillageois){
+    public Village(String nom, int nbVillageoisMaximum){
         this.nom = nom;
-        this.nbVillageois = nbVillageois;
+        for (int i=0; i<nbVillageoisMaximum; i++) {
+        	villageois[i] = "Villageois";
+        }
     }
 
     public void setChef(Chef chef){

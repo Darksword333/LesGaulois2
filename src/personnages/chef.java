@@ -1,4 +1,7 @@
-package Personnages;
+package personnages;
+
+import personnages.Village;
+import personnages.Romain;
 
 public class Chef {
 	private String nom;
