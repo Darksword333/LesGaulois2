@@ -1,7 +1,5 @@
 package personnages;
 
-import personnages.Chef;
-import personnages.Village;
 
 public class Romain {
 	private String nom;
@@ -15,7 +13,7 @@ public class Romain {
 		return nom;
 	}
 	public void parler(String texte) {
-		System.out.println(prendreParoles() + " « " + texte + " »");
+		System.out.println(prendreParoles() + " ï¿½ " + texte + " ï¿½");
 	}
 
 	private String prendreParoles() {
@@ -25,7 +23,7 @@ public class Romain {
 	public void recevoirCoup(int forceCoup) {
 		force -= forceCoup;
 		if (force > 0) {
-			parler("Aïe");
+			parler("Aï¿½e");
 		} else {
 			parler("J'abandonne...");
 		}
